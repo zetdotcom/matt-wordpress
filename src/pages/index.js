@@ -8,7 +8,7 @@ const IndexPage = () => (
     <p>Now go build something great.</p>
     <Link to="/sample-page">Go to sample page</Link>
     <br />
-    <Link to="//posts/hello-world">Go to samplepost hello word</Link>
+    <Link to="/posts/hello-world">Go to samplepost hello word</Link>
   </div>
 )
 
