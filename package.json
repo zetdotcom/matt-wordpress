@@ -8,6 +8,7 @@
     "gatsby-image": "^1.0.42",
     "gatsby-link": "^1.6.39",
     "gatsby-plugin-react-helmet": "^2.0.8",
+    "gatsby-plugin-sass": "^1.0.25",
     "gatsby-source-wordpress": "^2.0.70",
     "react-helmet": "^5.2.0"
   },

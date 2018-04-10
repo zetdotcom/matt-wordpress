@@ -3,8 +3,9 @@ module.exports = {
     title: 'Test WP site for Matt',
     subtitle: 'Fetch Data from test WP site for Matt',
   },
-  plugins: ['gatsby-plugin-react-helmet'],
   plugins: [
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sass',
     {
       resolve: 'gatsby-source-wordpress',
       options: {

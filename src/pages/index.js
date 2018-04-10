@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import Main from '../components/Main/Main'
+
 const IndexPage = () => (
   <div>
     <h1>Hi people</h1>
@@ -9,6 +11,7 @@ const IndexPage = () => (
     <Link to="/sample-page">Go to sample page</Link>
     <br />
     <Link to="/posts/hello-world">Go to samplepost hello word</Link>
+    <Main />
   </div>
 )
 
