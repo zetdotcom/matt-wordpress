@@ -1,0 +1,10 @@
+.navigation {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 50px;
+  li {
+    padding: 15px;
+    list-style: none;
+  }
+}
