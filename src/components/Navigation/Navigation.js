@@ -2,18 +2,25 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 import './Navigation.scss'
+import '../../styles/styles.scss'
 
 const Navigation = () => (
-  <div>
-    <ul className="navigation">
+  <div className="navigation">
+    <ul className="link">
       <li>
-        <Link to="#">One</Link>
+        <Link to="#">Home</Link>
       </li>
       <li>
-        <Link to="#">One</Link>
+        <Link to="#">Bio</Link>
       </li>
       <li>
-        <Link to="#">One</Link>
+        <Link to="#">Programs & Diet</Link>
+      </li>
+      <li>
+        <Link to="#">Services</Link>
+      </li>
+      <li>
+        <Link to="#">Blog</Link>
       </li>
     </ul>
   </div>

@@ -1,10 +1,24 @@
+@import '../../styles/colors.scss';
+
 .navigation {
-  display: flex;
-  flex-direction: row;
+  // display: flex;
+  // justify-self: flex-end;
   position: absolute;
   top: 50px;
+  right: 50px;
+  width: 60%;
+  text-transform: uppercase;
+  ul {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+  }
   li {
     padding: 15px;
     list-style: none;
+    transition: color 0.2s;
+    &:hover {
+      color: $blue;
+    }
   }
 }

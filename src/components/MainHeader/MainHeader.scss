@@ -1,11 +1,18 @@
 .main-header {
-  background: url('../../images/matt-header3.jpg') no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.875) 10%, rgba(255, 255, 255, 0)),
+    url('../../images/matt-header3.jpg') no-repeat center center;
   background-size: cover;
+  // background-color: rgba(135, 47, 47, 0.5);
   height: 90vh;
   position: relative;
   display: flex;
   align-items: center;
   .titles {
-    // margin: 0 auto;
+    color: whitesmoke;
+    margin-left: 100px;
+  }
+  .titles-call {
+    font-size: 1.5rem;
+    width: 50%;
   }
 }

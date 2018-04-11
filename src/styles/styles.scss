@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700');
+@import url('https://fonts.googleapis.com/css?family=Black+Ops+One');
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+
+@font-face {
+  font-family: 'Baroness Kuffner';
+  src: url('../fonts/Baroness Kuffner.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 22px;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: 'Righteous', cursive;
+  letter-spacing: 2px;
+}
