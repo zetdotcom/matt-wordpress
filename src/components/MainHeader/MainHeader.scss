@@ -1,15 +1,26 @@
 .main-header {
-  background: linear-gradient(rgba(0, 0, 0, 0.875) 10%, rgba(255, 255, 255, 0)),
+  background: linear-gradient(rgba(0, 4, 20, 0.875) 10%, rgba(1, 41, 49, 0.451)),
     url('../../images/matt-header3.jpg') no-repeat center center;
   background-size: cover;
-  // background-color: rgba(135, 47, 47, 0.5);
   height: 90vh;
   position: relative;
   display: flex;
   align-items: center;
+  .img-logo {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    border-radius: 50%;
+    opacity: 0.5;
+  }
   .titles {
     color: whitesmoke;
     margin-left: 100px;
+    h1 {
+      font-size: 3.25rem;
+    }
   }
   .titles-call {
     font-size: 1.5rem;

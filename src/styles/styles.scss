@@ -2,12 +2,9 @@
 @import url('https://fonts.googleapis.com/css?family=Black+Ops+One');
 @import url('https://fonts.googleapis.com/css?family=Righteous');
 
-@font-face {
-  font-family: 'Baroness Kuffner';
-  src: url('../fonts/Baroness Kuffner.ttf') format('ttf');
-  font-weight: normal;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css?family=Allerta+Stencil|Audiowide|Bungee+Inline|Graduate|Monoton|Orbitron:400,900|Prosto+One|Special+Elite');
+
+@import './colors.scss';
 
 html,
 body {
@@ -26,6 +23,22 @@ a {
 }
 
 h1 {
-  font-family: 'Righteous', cursive;
-  letter-spacing: 2px;
+  //   font-family: 'Righteous', cursive;
+  // font-family: 'Orbitron', sans-serif;
+  font-family: 'Audiowide', cursive;
+  // font-family: 'Special Elite', cursive;
+  // font-family: 'Prosto One', cursive;
+  // font-family: 'Allerta Stencil', sans-serif;
+  // font-family: 'Graduate', cursive;
+
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  &:after {
+    content: '';
+    width: 150px;
+    background-color: $blue;
+    height: 3px;
+    display: block;
+    margin-top: 20px;
+  }
 }
