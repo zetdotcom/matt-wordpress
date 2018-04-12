@@ -1,10 +1,10 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
 
-import './index.scss'
-import '../styles/styles.scss'
-import '../styles/colors.scss'
+import './index.scss';
+import '../styles/styles.scss';
+import '../styles/colors.scss';
 
 const TemplateWrapper = ({ children }) => (
   <div>
@@ -18,10 +18,10 @@ const TemplateWrapper = ({ children }) => (
 
     <div>{children()}</div>
   </div>
-)
+);
 
 TemplateWrapper.propTypes = {
   children: PropTypes.func,
-}
+};
 
-export default TemplateWrapper
+export default TemplateWrapper;
