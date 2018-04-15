@@ -1,16 +1,19 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import Navigation from '../Navigation/Navigation'
-import BlueButton from '../../components/BlueButton/BlueButton'
+import React from 'react';
+import Link from 'gatsby-link';
+import Navigation from '../Navigation/Navigation';
+import BlueButton from '../../components/BlueButton/BlueButton';
 
-import './MainHeader.scss'
+import './MainHeader.scss';
 
-import logo from '../../images/logo-small.jpg'
+import logo from '../../images/logo-small.jpg';
 
 const MainHeader = () => (
   <div className="main-header">
     <Navigation />
-    {/*<img
+    {/*
+     
+      
+      <img
       src={logo}
       className="img-logo"
       alt="matt wielunski personal trainer logo"
@@ -24,6 +27,6 @@ const MainHeader = () => (
       <BlueButton label="Find out more  &rarr;" />
     </div>
   </div>
-)
+);
 
-export default MainHeader
+export default MainHeader;

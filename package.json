@@ -10,6 +10,7 @@
     "gatsby-plugin-react-helmet": "^2.0.8",
     "gatsby-plugin-sass": "^1.0.19",
     "gatsby-source-wordpress": "^2.0.70",
+    "react-burger-menu": "^2.4.2",
     "react-helmet": "^5.2.0"
   },
   "keywords": [
