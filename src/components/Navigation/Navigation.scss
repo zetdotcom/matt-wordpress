@@ -1,8 +1,6 @@
 @import '../../styles/colors.scss';
 
 .navigation {
-  // display: flex;
-  // justify-self: flex-end;
   position: absolute;
   top: 50px;
   right: 50px;
@@ -19,25 +17,43 @@
     padding: 15px;
     list-style: none;
     transition: color 0.2s;
-    // white-space: nowrap;
     &:hover {
       color: $blue;
     }
   }
 }
+.hamburger {
+  display: none;
+  z-index: 10;
+}
 
 @media (max-width: 740px) {
+  .hamburger {
+    display: block;
+    position: fixed;
+    top: 40px;
+    right: 40px;
+  }
   .navigation {
-    top: 10px;
-    right: 10px;
-    bottom: 10px;
-    left: 10px;
-    width: auto;
+    left: 0px;
+    bottom: 0px;
+    position: fixed;
+    width: 100%;
+    transition: all 0.5s;
     ul {
       flex-direction: column;
       align-items: center;
-      // height: 95vh;
-      background: grey;
+      height: 100vh;
+      background: linear-gradient(
+        -90deg,
+        rgba(44, 44, 44, 0.95),
+        $blue,
+        rgba(44, 44, 44, 0.95)
+      );
+      left: -100%;
+      justify-content: space-evenly;
+      font-size: 1.3rem;
+      text-shadow: 1px 1px 1px grey;
     }
   }
 }

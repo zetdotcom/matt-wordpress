@@ -6,10 +6,10 @@ import Navigation from '../components/Navigation/Navigation';
 
 import '../styles/styles.scss';
 
-const IndexPage = () => (
-  <div>
+const IndexPage = props => (
+  <div className="index-page">
     <MainHeader />
-
+    <Navigation />
     <div className="container">
       <h1>Hi people</h1>
       <p>Welcome to your new Gatsby site.</p>

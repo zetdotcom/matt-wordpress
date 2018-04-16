@@ -9,10 +9,9 @@ import logo from '../../images/logo-small.jpg';
 
 const MainHeader = () => (
   <div className="main-header">
-    <Navigation />
     {/*
      
-      
+      <Navigation />
       <img
       src={logo}
       className="img-logo"
