@@ -7,15 +7,31 @@ import '../../styles/styles.scss';
 
 class Navigation extends React.Component {
   constructor(props) {
+    if (typeof window !== 'undefined');
     super(props);
 
     this.state = {
       open: false,
-      innerWidth: window.innerWidth,
+
       top: '0%',
     };
 
     this.updateDimensions = this.updateDimensions.bind(this);
+  }
+
+  /**
+   * Add event listener
+   */
+  componentDidMount() {
+    this.updateDimensions();
+    window.addEventListener('resize', this.updateDimensions);
+  }
+
+  /**
+   * Remove event listener
+   */
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateDimensions);
   }
 
   updateDimensions() {
@@ -50,21 +66,6 @@ class Navigation extends React.Component {
     }
   }
 
-  /**
-   * Add event listener
-   */
-  componentDidMount() {
-    this.updateDimensions();
-    window.addEventListener('resize', this.updateDimensions);
-  }
-
-  /**
-   * Remove event listener
-   */
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.updateDimensions);
-  }
-
   render() {
     const stylele = () => {
       if (window.innerWidth < 740) {
@@ -76,7 +77,6 @@ class Navigation extends React.Component {
 
     return (
       <div>
-        {console.log(window.innerWidth)}
         <div className="hamburger">
           <HamburgerMenu
             isOpen={this.state.open}
