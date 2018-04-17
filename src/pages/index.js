@@ -3,6 +3,7 @@ import Link from 'gatsby-link';
 
 import MainHeader from '../components/MainHeader/MainHeader';
 import Navigation from '../components/Navigation/Navigation';
+import About from '../components/About/About';
 
 import '../styles/styles.scss';
 
@@ -10,6 +11,7 @@ const IndexPage = props => (
   <div className="index-page">
     <MainHeader />
     <Navigation />
+    <About />
     <div className="container">
       <h1>Hi people</h1>
       <p>Welcome to your new Gatsby site.</p>

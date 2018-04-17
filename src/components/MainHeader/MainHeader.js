@@ -23,7 +23,7 @@ const MainHeader = () => (
         Tutaj jakies fajne motywujace zdnaie ktore bedzie musial Matt wymyslic.
         Takie zeby bylo fajnie{' '}
       </div>
-      <BlueButton label="Find out more  &rarr;" />
+      <BlueButton label="Find out more" />
     </div>
   </div>
 );

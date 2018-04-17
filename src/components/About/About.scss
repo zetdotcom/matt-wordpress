@@ -1,0 +1,33 @@
+.about-page {
+  background: black;
+  position: relative;
+  height: 800px;
+  border: 1px solid green;
+  .about-container {
+    display: flex;
+    // max-width: 1140px;
+  }
+
+  .big-image {
+    flex: 2;
+
+    // background-image: url('../../images/matt-header2.jpg');
+    // width: 1000px;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    height: 700px;
+    align-items: center;
+    // border: 1px solid red;
+    img {
+      height: 100%;
+      // position: absolute;
+      // left: 0;
+    }
+  }
+  .about-content {
+    flex: 3;
+    color: whitesmoke;
+    padding: 50px;
+  }
+}
