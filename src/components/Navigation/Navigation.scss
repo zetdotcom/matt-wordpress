@@ -33,10 +33,11 @@
     position: fixed;
     top: 40px;
     right: 40px;
+    z-index: 11;
   }
   .navigation {
     left: 0px;
-    z-index: 1;
+    z-index: 10;
     position: fixed;
     width: 100%;
     transition: all 0.4s ease-out;

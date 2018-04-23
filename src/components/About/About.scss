@@ -1,9 +1,13 @@
 .about-page {
-  background: black;
+  background: linear-gradient(
+    to right,
+    rgba(15, 15, 15, 0.951),
+    rgba(34, 34, 34, 0.889)
+  );
   position: relative;
-  height: 800px;
-  border: 1px solid green;
-  .about-container {
+  height: 100%;
+  // border: 1px solid green;
+  .about-top {
     display: flex;
     // max-width: 1140px;
   }
@@ -13,15 +17,20 @@
 
     // background-image: url('../../images/matt-header2.jpg');
     // width: 1000px;
-    // position: absolute;
+    // position: relative;
     // top: 0;
     // left: 0;
-    height: 700px;
-    align-items: center;
+    top: -60px;
+    // height: 1000px;
+    // width: 680px;
+    // align-items: center;
     // border: 1px solid red;
     img {
-      height: 100%;
-      // position: absolute;
+      border: 1px solide yellow;
+      // width: 100%;
+      height: 1000px;
+      top: -50px;
+      position: absolute;
       // left: 0;
     }
   }
@@ -29,5 +38,31 @@
     flex: 3;
     color: whitesmoke;
     padding: 50px;
+    z-index: 3;
+  }
+  .about-video {
+    display: flex;
+    flex: 1;
+    // justify-content: space-around;
+    iframe {
+      border: none;
+    }
+    img {
+      margin: 10px;
+      width: 300px;
+      height: 100%;
+    }
+  }
+
+  .about-images {
+    display: flex;
+    margin: 100px;
+    justify-content: space-around;
+    height: 450px;
+    img {
+      height: 80%;
+      padding: 10px;
+      // width: 50%;
+    }
   }
 }
