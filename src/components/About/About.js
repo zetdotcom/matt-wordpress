@@ -6,10 +6,10 @@ import BlueButton from '../../components/BlueButton/BlueButton';
 import './About.scss';
 
 import mattCut from '../../images/matt-header2-noleg.png';
-import mattAbout4 from '../../images/mat-4.jpg';
-import mattAbout2 from '../../images/matt-about-2.jpg';
-import mattAbout3 from '../../images/matt-about-3.jpg';
-import mattAbout1 from '../../images/matt-about-1.jpg';
+import mattAbout1 from '../../images/about-matt-1.jpg';
+import mattAbout2 from '../../images/about-matt-2.jpg';
+import mattAbout3 from '../../images/about-matt-3.jpg';
+import mattAbout4 from '../../images/about-matt-4.jpg';
 
 const About = () => (
   <div className="about-page">
