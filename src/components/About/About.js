@@ -13,34 +13,36 @@ import mattAbout4 from '../../images/about-matt-4.jpg';
 
 const About = () => (
   <div className="about-page">
-    <div className="about-top">
-      <div className="big-image">
-        <img src={mattCut} alt="main matt image" />
-      </div>
-      <div className="about-content">
-        <div className="page-title">Matt Wielunski</div>
-        <div>
-          <h1>About</h1>
+    <div className="container">
+      <div className="about-top">
+        <div className="big-image">
+          <img src={mattCut} alt="main matt image" />
         </div>
-        <div className="about-description">
-          Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w
-          przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez
-          nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć
-          wieków później zaczął być używany przemyśle elektronicznym, pozostając
-          praktycznie niezmienionym. Spopularyzował się w latach 60. XX w. wraz
-          z publikacją arkuszy Letrasetu, zawierających fragmenty Lorem Ipsum, a
-          ostatnio z zawierającym różne wersje{' '}
-        </div>
-        <BlueButton label="BIO" />
-        <div className="about-video">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/MSqFN_AiHo4"
-            frameborder="0"
-            allow="autoplay; encrypted-media"
-            allowfullscreen
-          />
+        <div className="about-content">
+          <div className="page-title">Matt Wielunski</div>
+          <div>
+            <h1>About</h1>
+          </div>
+          <div className="about-description">
+            Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w
+            przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez
+            nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć
+            wieków później zaczął być używany przemyśle elektronicznym,
+            pozostając praktycznie niezmienionym. Spopularyzował się w latach
+            60. XX w. wraz z publikacją arkuszy Letrasetu, zawierających
+            fragmenty Lorem Ipsum, a ostatnio z zawierającym różne wersje{' '}
+          </div>
+          <BlueButton label="BIO" />
+          <div className="about-video">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/MSqFN_AiHo4"
+              frameborder="0"
+              allow="autoplay; encrypted-media"
+              allowfullscreen
+            />
+          </div>
         </div>
       </div>
     </div>

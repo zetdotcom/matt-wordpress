@@ -1,37 +1,20 @@
 .about-page {
-  background: linear-gradient(
-    to right,
-    rgba(15, 15, 15, 0.951),
-    rgba(34, 34, 34, 0.889)
-  );
+  background: linear-gradient(to right, rgb(15, 15, 15) 60%, rgb(19, 30, 67));
   position: relative;
   height: 100%;
-  // border: 1px solid green;
   .about-top {
     display: flex;
-    // max-width: 1140px;
   }
 
   .big-image {
     flex: 2;
-
-    // background-image: url('../../images/matt-header2.jpg');
-    // width: 1000px;
-    // position: relative;
-    // top: 0;
-    // left: 0;
     top: -60px;
-    // height: 1000px;
-    // width: 680px;
-    // align-items: center;
-    // border: 1px solid red;
     img {
       border: 1px solide yellow;
-      // width: 100%;
       height: 1000px;
       top: -50px;
       position: absolute;
-      // left: 0;
+      left: 0;
     }
   }
   .about-content {
@@ -43,14 +26,8 @@
   .about-video {
     display: flex;
     flex: 1;
-    // justify-content: space-around;
     iframe {
       border: none;
-    }
-    img {
-      margin: 10px;
-      width: 300px;
-      height: 100%;
     }
   }
 
@@ -58,11 +35,86 @@
     display: flex;
     margin: 100px;
     justify-content: space-around;
-    height: 450px;
+    height: 400px;
     img {
       height: 80%;
       padding: 10px;
-      // width: 50%;
+    }
+  }
+}
+
+@media (max-width: 1140px) {
+  .about-page {
+    .about-content {
+      text-shadow: 0px 0px 15px black;
+      height: auto;
+    }
+    .about-images {
+      flex-flow: row wrap;
+      height: auto;
+      justify-content: center;
+      margin: 20px;
+      img {
+        height: 50%;
+        width: 35%;
+      }
+    }
+  }
+}
+
+@media (max-width: 980px) {
+  .about-page {
+    .big-image {
+      margin: 0 auto;
+      height: 100%;
+      img {
+        height: 50%;
+        top: -30px;
+        left: -40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 880px) {
+  .about-page {
+    .big-image {
+      img {
+        height: 30%;
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .about-page {
+    .about-content {
+      width: 100%;
+      padding: 10px;
+      margin: 0 auto;
+    }
+    .about-images {
+      img {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  .about-page {
+    .big-image {
+      margin: 0 auto;
+      height: 500px;
+      img {
+        position: relative;
+        height: 100%;
+        top: 30px;
+        left: 0;
+      }
+    }
+    .about-top {
+      flex-flow: column;
     }
   }
 }
