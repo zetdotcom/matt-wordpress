@@ -21,7 +21,7 @@ const MainHeader = () => (
       <h1>Matt Wielunski</h1>
       <div className="titles-call">
         Tutaj jakies fajne motywujace zdnaie ktore bedzie musial Matt wymyslic.
-        Takie zeby bylo fajnie{' '}
+        Takie zeby bylo fajnie!{' '}
       </div>
       <BlueButton label="Find out more" />
     </div>
