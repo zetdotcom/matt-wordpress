@@ -38,20 +38,19 @@ const About = () => (
               width="560"
               height="315"
               src="https://www.youtube.com/embed/MSqFN_AiHo4"
-              frameborder="0"
-              allow="autoplay; encrypted-media"
-              allowfullscreen
+              frameBorder="0"
+              allowFullScreen
             />
           </div>
         </div>
       </div>
     </div>
-    <div className="about-images">
+    {/*}   <div className="about-images">
       <img src={mattAbout1} alt="image1" />
       <img src={mattAbout2} alt="image2" />
       <img src={mattAbout3} alt="image2" />
       <img src={mattAbout4} alt="image2" />
-    </div>
+</div> */}
   </div>
 );
 

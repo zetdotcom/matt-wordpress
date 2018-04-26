@@ -1,5 +1,9 @@
 .about-page {
-  background: linear-gradient(to right, rgb(15, 15, 15) 60%, rgb(19, 30, 67));
+  background: linear-gradient(
+    to right,
+    rgb(15, 15, 15) 60%,
+    rgba(8, 13, 29, 0.799)
+  );
   position: relative;
   height: 100%;
   .about-top {
@@ -64,13 +68,23 @@
 
 @media (max-width: 980px) {
   .about-page {
+    .about-content {
+      // width: 100%;
+      // flex-grow: 1;
+      flex: 1 1 90%;
+    }
     .big-image {
+      // position: absolute;
+      // flex: 1 1 100%;
+      // width: 100%;
       margin: 0 auto;
       height: 100%;
       img {
-        height: 50%;
-        top: -30px;
-        left: -40px;
+        // height: 50%;
+        top: 0px;
+        opacity: 0.5;
+
+        // left: -40px;
       }
     }
   }
@@ -80,7 +94,7 @@
   .about-page {
     .big-image {
       img {
-        height: 30%;
+        // height: 30%;
       }
     }
   }
@@ -111,6 +125,7 @@
         height: 100%;
         top: 30px;
         left: 0;
+        opacity: 1;
       }
     }
     .about-top {
