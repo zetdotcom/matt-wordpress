@@ -14,7 +14,7 @@ class Navigation extends React.Component {
     }
     super(props);
     this.state = {
-      open: true,
+      open: false,
       menuClass: 'a',
     };
 
