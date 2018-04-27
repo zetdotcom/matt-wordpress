@@ -2,51 +2,53 @@ import React from 'react';
 import Link from 'gatsby-link';
 import HamburgerMenu from 'react-hamburger-menu';
 
-import './Navigation.scss';
+import './Navigation.1.scss';
 import '../../styles/styles.scss';
 
 class Navigation extends React.Component {
   constructor(props) {
-    {
-      /*
-    if the build will be working without it, then this can be removed
-  if (typeof window !== 'undefined');   */
-    }
+    if (typeof window !== 'undefined');
     super(props);
+
     this.state = {
-      open: true,
-      menuClass: 'a',
+      open: false,
+
+      top: '0%',
     };
 
-    this.setMenuClass = this.setMenuClass.bind(this);
+    this.updateDimensions = this.updateDimensions.bind(this);
   }
+
+  /**
+   * Add event listener
+   */
   componentDidMount() {
-    this.setMenuClass();
-    window.addEventListener('resize', this.setMenuClass);
+    this.updateDimensions();
+    window.addEventListener('resize', this.updateDimensions);
   }
 
   /**
    * Remove event listener
    */
   componentWillUnmount() {
-    window.removeEventListener('resize', this.setMenuClass);
+    window.removeEventListener('resize', this.updateDimensions);
   }
 
-  setMenuClass() {
+  updateDimensions() {
     //when resizing with window less than 740px and menu was opened it keeps menu opened
     if (window.innerWidth < 740 && this.state.open) {
       this.setState({
-        menuClass: 'navigation--open',
+        top: '0px',
       });
     } else if (window.innerWidth > 740) {
       //when window made more than 740px brings normal menu back and sets state for resp menu to false
       this.setState({
         open: false,
-        menuClass: 'navigation',
+        top: '50px',
       });
     } else if (window.innerWidth < 740) {
       //hides resp menu when window less than 740px
-      this.setState({ menuClass: 'navigation--close' });
+      this.setState({ top: '-100%' });
     }
   }
   toggleMenu() {
@@ -55,33 +57,43 @@ class Navigation extends React.Component {
     });
     if (this.state.open) {
       this.setState({
-        menuClass: 'navigation--close',
+        top: '-100%',
       });
     } else {
       this.setState({
-        menuClass: 'navigation--open',
+        top: '0px',
       });
     }
   }
 
   render() {
+    const stylele = () => {
+      if (window.innerWidth < 740) {
+        return this.state.open ? '0%' : '-100%';
+      } else {
+        return '0%';
+      }
+    };
+
     return (
       <div>
         <div className="hamburger">
           <HamburgerMenu
             isOpen={this.state.open}
             menuClicked={this.toggleMenu.bind(this)}
-            onClick={this.setMenuClass}
+            onClick={this.updateDimensions}
             width={0}
             height={0}
-            strokeWidth={3}
+            strokeWidth={2}
             rotate={0}
             color="white"
             borderRadius={0}
             animationDuration={0.5}
           />
         </div>
-        <div className={this.state.menuClass}>
+        <div className="navigation" style={{ top: this.state.top }}>
+          {console.log(this.state.top, this.state.open)}
+
           <ul className="link">
             <li>
               <Link to="#">Home</Link>

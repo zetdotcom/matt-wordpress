@@ -1,0 +1,67 @@
+@import '../../styles/colors.scss';
+
+.navigation {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 650px;
+  text-transform: uppercase;
+
+  ul {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+  }
+  li {
+    padding: 15px;
+    list-style: none;
+    transition: color 0.2s;
+    &:hover {
+      color: $blue;
+    }
+  }
+}
+.hamburger {
+  display: none;
+  z-index: 10;
+}
+
+@media (max-width: 740px) {
+  .hamburger {
+    display: block;
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    z-index: 11;
+  }
+  .navigation {
+    left: 0px;
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    transition: all 0.4s ease-out;
+
+    ul {
+      flex-direction: column;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(
+        -90deg,
+        rgba(0, 0, 0, 0.95),
+        rgba(41, 41, 41, 0.94),
+        rgba(0, 0, 0, 0.95)
+      );
+      left: -100%;
+      justify-content: space-evenly;
+      font-size: 1.3rem;
+      text-shadow: 1px 1px 1px grey;
+      color: $blue;
+      li {
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+}

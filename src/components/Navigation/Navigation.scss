@@ -27,41 +27,100 @@
   z-index: 10;
 }
 
+.navigation--open {
+  @extend .navigation;
+  // flex-direction: column;
+  background: grey;
+  left: 0px;
+  top: 0px;
+  height: 100vh;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  transition: all 0.4s ease-out;
+
+  ul {
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    height: 100vh;
+    justify-content: space-evenly;
+    font-size: 1.3rem;
+    text-shadow: 1px 1px 1px grey;
+    color: $blue;
+    background: linear-gradient(
+      -90deg,
+      rgba(0, 0, 0, 0.95),
+      rgba(41, 41, 41, 0.94),
+      rgba(0, 0, 0, 0.95)
+    );
+  }
+  li {
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.navigation--close {
+  @extend .navigation--open;
+  left: -100%;
+  transition: all 0.4s ease-out;
+}
+
 @media (max-width: 740px) {
   .hamburger {
     display: block;
     position: fixed;
-    top: 40px;
+    bottom: 40px;
     right: 40px;
     z-index: 11;
-  }
-  .navigation {
-    left: 0px;
-    z-index: 10;
-    position: fixed;
-    width: 100%;
-    transition: all 0.4s ease-out;
-
-    ul {
-      flex-direction: column;
-      align-items: center;
-      height: 100vh;
-      background: linear-gradient(
-        -90deg,
-        rgba(0, 0, 0, 0.95),
-        rgba(41, 41, 41, 0.94),
-        rgba(0, 0, 0, 0.95)
-      );
-      left: -100%;
-      justify-content: space-evenly;
-      font-size: 1.3rem;
-      text-shadow: 1px 1px 1px grey;
-      color: $blue;
-      li {
-        &:hover {
-          color: white;
-        }
-      }
+    // border: 1px solid blue;
+    padding: 15px;
+    border-radius: 50%;
+    background: $blue;
+    cursor: pointer;
+    transition: all 0.2s;
+    &:hover {
+      box-shadow: 0px 0px 5px 2px rgba(0, 169, 192, 0.896);
+      // background: rgba(50, 207, 212, 0.812);
     }
   }
+
+  @media (max-width: 415px) {
+    .hamburger {
+      bottom: 10px;
+      right: 10px;
+      transform: scale(0.9);
+    }
+  }
+  // .navigation {
+  //   left: 0px;
+  //   z-index: 10;
+  //   position: fixed;
+  //   width: 100%;
+  //   transition: all 0.4s ease-out;
+
+  //   ul {
+  //     flex-direction: column;
+  //     align-items: center;
+  //     height: 100vh;
+  //     background: linear-gradient(
+  //       -90deg,
+  //       rgba(0, 0, 0, 0.95),
+  //       rgba(41, 41, 41, 0.94),
+  //       rgba(0, 0, 0, 0.95)
+  //     );
+  //     left: -100%;
+  //     justify-content: space-evenly;
+  //     font-size: 1.3rem;
+  //     text-shadow: 1px 1px 1px grey;
+  //     color: $blue;
+  //     li {
+  //       &:hover {
+  //         color: white;
+  //       }
+  //     }
+  //   }
+  // }
 }
