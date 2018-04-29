@@ -14,7 +14,7 @@ const programImage = () => {
         <div className="overlay">
           <img className="program-image" src={item.image} />
           <div className="program-info">
-            <div>{item.type}</div>
+            <div className="program-type">{item.type}</div>
             <h3>{item.title}</h3>
             <div className="program-desc">{item.description}</div>
           </div>{' '}

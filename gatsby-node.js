@@ -2,53 +2,24 @@ const _ = require(`lodash`);
 const Promise = require(`bluebird`);
 const path = require(`path`);
 const slash = require(`slash`);
-
-const pageQuery = `
-{
-  allWordpressPage {
-    edges {
-      node {
-        id
-        slug
-        status
-        template
-      }
-    }
-  }
-}
-`;
-
-const postsQuery = `
-{
-  allWordpressPost {
-    edges {
-      node {
-        id
-        slug
-        status
-        template
-        format
-      }
-    }
-  }
-}
-`;
+const queryAll = require(`./src/queries/queryAll.js`);
 
 exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators;
 
   return new Promise((resolve, reject) => {
-    // Pages
-    graphql(pageQuery)
-      .then(result => {
-        if (result.errors) {
-          console.log(result.errors);
-          reject(result.errors);
-        }
+    // Templates
+    const pageTemplate = path.resolve('./src/templates/page.js');
+    const postTemplate = path.resolve('./src/templates/post.js');
 
-        const pageTemplate = path.resolve('./src/templates/page.js');
+    resolve(
+      graphql(queryAll).then(result => {
+        if (result.errors) reject(result.errors);
 
-        _.each(result.data.allWordpressPage.edges, edge => {
+        // Pages detail
+        const pages = result.data.allWordpressPage.edges;
+
+        pages.forEach(edge => {
           createPage({
             path: `/${edge.node.slug}/`,
             component: slash(pageTemplate),
@@ -57,35 +28,20 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             },
           });
         });
-      })
 
-      .then(() => {
-        graphql(postsQuery).then(result => {
-          if (result.errors) {
-            console.log(result.errors);
-            reject(result.errors);
-          }
-          const postTemplate = path.resolve('./src/templates/post.js');
-          const postsTemplate = path.resolve('./src/templates/posts.js');
+        // Posts detail
+        const posts = result.data.allWordpressPost.edges;
 
-          // Create Posts
+        posts.forEach(edge => {
           createPage({
-            path: `/posts/`,
-            component: slash(postsTemplate),
+            path: `/post/${edge.node.slug}/`,
+            component: slash(postTemplate),
+            context: {
+              id: edge.node.id,
+            },
           });
-
-          _.each(result.data.allWordpressPost.edges, edge => {
-            createPage({
-              path: `/post/${edge.node.slug}/`,
-              component: slash(postTemplate),
-              context: {
-                id: edge.node.id,
-              },
-            });
-          });
-          resolve();
         });
-      });
-    // ==== END POSTS ====
+      })
+    );
   });
 };
