@@ -48,6 +48,27 @@ h1 {
   }
 }
 
+h3 {
+  //   font-family: 'Righteous', cursive;
+  // font-family: 'Orbitron', sans-serif;
+  font-family: 'Audiowide', cursive;
+  // font-family: 'Special Elite', cursive;
+  // font-family: 'Prosto One', cursive;
+  // font-family: 'Allerta Stencil', sans-serif;
+  // font-family: 'Graduate', cursive;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  &:after {
+    content: '';
+    width: 100px;
+    background-color: $blue;
+    height: 3px;
+    display: block;
+    margin-top: 15px;
+  }
+}
+
 @media (max-width: 640px) {
   .container {
     // padding: 20px;

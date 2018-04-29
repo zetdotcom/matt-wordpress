@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 module.exports = `
     {
@@ -21,9 +21,10 @@ module.exports = `
                     status
                     template
                     format
-                    excerpt
+                    title
+                    date
                 }
             }
         }
     }
-`
+`;

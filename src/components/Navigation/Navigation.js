@@ -96,7 +96,7 @@ class Navigation extends React.Component {
               <Link to="#">Services</Link>
             </li>
             <li>
-              <Link to="#">Blog</Link>
+              <Link to="/posts">Blog</Link>
             </li>
           </ul>
         </div>

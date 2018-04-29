@@ -4,6 +4,7 @@ import Link from 'gatsby-link';
 import MainHeader from '../components/MainHeader/MainHeader';
 import Navigation from '../components/Navigation/Navigation';
 import About from '../components/About/About';
+import Programs from '../components/Programs/Programs';
 
 import '../styles/styles.scss';
 
@@ -12,6 +13,7 @@ const IndexPage = props => (
     <MainHeader />
     <Navigation />
     <About />
+    <Programs />
     <div className="container">
       <h1>Hi people</h1>
       <p>Welcome to your new Gatsby site.</p>

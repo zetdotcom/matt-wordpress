@@ -1,0 +1,40 @@
+@import '../../styles/colors.scss';
+
+.programs-diet {
+  .programs-images {
+    display: flex;
+    // height: 80vh;
+  }
+  .overlay {
+    height: 100%;
+    overflow: hidden;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.278);
+  }
+  .program {
+    position: relative;
+    height: 80vh;
+    width: auto;
+    color: $white;
+
+    img {
+      // position: abosulte;
+      height: 100%;
+      width: 100%;
+      // z-index: -1;
+    }
+    &::after {
+      bottom: 0;
+      right: 0;
+      background: linear-gradient(black, grey);
+    }
+  }
+  .program-info {
+    position: absolute;
+    top: 20px;
+    // z-index: 2;
+  }
+  .program-desc {
+    display: none;
+  }
+}

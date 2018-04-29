@@ -1,10 +1,10 @@
-import React, { Component } from 'react'
-import Link from 'gatsby-link'
-import PropTypes from 'prop-types'
+import React, { Component } from 'react';
+import Link from 'gatsby-link';
+import PropTypes from 'prop-types';
 
 class PostsTemplate extends Component {
   render() {
-    const data = this.props.data
+    const data = this.props.data;
 
     return (
       <div>
@@ -23,16 +23,16 @@ class PostsTemplate extends Component {
           </div>
         ))}
       </div>
-    )
+    );
   }
 }
 
 PostsTemplate.propTypes = {
   data: PropTypes.object.isRequired,
   edges: PropTypes.array,
-}
+};
 
-export default PostsTemplate
+export default PostsTemplate;
 
 export const pageQuery = graphql`
   query postsQuery {
@@ -44,8 +44,13 @@ export const pageQuery = graphql`
           excerpt
           slug
           date(formatString: "DD MMMM, YYYY")
+          featured_media {
+            id
+            slug
+            source_url
+          }
         }
       }
     }
   }
-`
+`;
