@@ -25,13 +25,15 @@ const programImage = () => {
 };
 
 const Programs = () => (
-  <div className="programs-diet">
-    <div>
-      <h1>Programs & Diet </h1>
+  <div className="programs-section">
+    <div className="programs-section-title container">
       <div>
+        <h1>Programs & Diet </h1>
         <p>Programs and diets are deisgned to get you into shape</p>
       </div>
-      <BlueButton label="programs & diets" />
+      <div>
+        <BlueButton label="programs & diets" />
+      </div>
     </div>
     <div className="programs-images">{programImage()}</div>
   </div>

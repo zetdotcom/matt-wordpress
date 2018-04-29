@@ -1,15 +1,32 @@
 @import '../../styles/colors.scss';
 
-.programs-diet {
+.programs-section {
+  // background: linear-gradient(
+  //   to left,
+  //   rgb(15, 15, 15) 60%,
+  //   rgba(8, 13, 29, 0.799)
+  // );
+  color: $white;
+  p {
+    color: $greyfont;
+  }
+  .programs-section-title {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+  }
   .programs-images {
     display: flex;
+    flex-flow: row;
     // height: 80vh;
   }
   .overlay {
     height: 100%;
-    overflow: hidden;
-    z-index: 2;
-    background: rgba(0, 0, 0, 0.722);
+    // border: 1px solid $white;
+    // margin: 10px;
+    // overflow: hidden;
+    // z-index: 2;
+    // background: rgba(0, 0, 0, 0.722);
     // position: absolute;
   }
   .program {
@@ -41,13 +58,20 @@
       .program-desc {
         display: block;
       }
+      .program-info {
+        border: 1px solid white;
+      }
     }
   }
   .program-info {
-    padding: 100px 50px;
+    padding: 100px 30px 0px;
     position: absolute;
     top: 20px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
     z-index: 3;
+    // height: 100%;
   }
   .program-type {
     color: $greyfont;
@@ -56,5 +80,61 @@
   }
   .program-desc {
     display: none;
+  }
+}
+
+@media (max-width: 1250px) {
+  .programs-section {
+    .program {
+      font-size: 80%;
+      h3 {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1020px) {
+  .programs-section {
+    .programs-images {
+      flex-flow: row wrap;
+    }
+    .program {
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width: 990px) {
+  .programs-section {
+    .programs-section-title {
+      flex-flow: column;
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  .programs-section {
+    .programs-images {
+      flex-flow: row wrap;
+    }
+    .program {
+      margin: 0 auto;
+      width: 80%;
+      height: 60vh;
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  .programs-section {
+    .programs-images {
+      flex-flow: row wrap;
+    }
+    .program {
+      margin: 0 auto;
+      width: 100%;
+      height: 60vh;
+    }
   }
 }

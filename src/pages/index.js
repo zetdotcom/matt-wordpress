@@ -7,13 +7,16 @@ import About from '../components/About/About';
 import Programs from '../components/Programs/Programs';
 
 import '../styles/styles.scss';
+import './index.scss';
 
 const IndexPage = props => (
   <div className="index-page">
     <MainHeader />
     <Navigation />
-    <About />
-    <Programs />
+    <div className="sections-bg">
+      <About />
+      <Programs />
+    </div>
     <div className="container">
       <h1>Hi people</h1>
       <p>Welcome to your new Gatsby site.</p>

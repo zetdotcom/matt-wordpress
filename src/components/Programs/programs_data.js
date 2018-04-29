@@ -12,7 +12,7 @@ const programs_data = [
     link: '#',
   },
   {
-    type: 'program',
+    type: 'diet',
     title: 'Total fitness training 2',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus.',
