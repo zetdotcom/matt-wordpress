@@ -17,6 +17,9 @@ const programImage = () => {
             <div className="program-type">{item.type}</div>
             <h3>{item.title}</h3>
             <div className="program-desc">{item.description}</div>
+            <div className="program-button">
+              <BlueButton label="Check Program" />
+            </div>
           </div>{' '}
         </div>
       </div>

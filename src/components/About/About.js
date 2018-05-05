@@ -24,13 +24,15 @@ const About = () => (
             <h1>About</h1>
           </div>
           <div className="about-description">
-            Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w
-            przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez
-            nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć
-            wieków później zaczął być używany przemyśle elektronicznym,
-            pozostając praktycznie niezmienionym. Spopularyzował się w latach
-            60. XX w. wraz z publikacją arkuszy Letrasetu, zawierających
-            fragmenty Lorem Ipsum, a ostatnio z zawierającym różne wersje{' '}
+            <p>
+              Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w
+              przemyśle poligraficznym. Został po raz pierwszy użyty w XV w.
+              przez nieznanego drukarza do wypełnienia tekstem próbnej książki.
+              Pięć wieków później zaczął być używany przemyśle elektronicznym,
+              pozostając praktycznie niezmienionym. Spopularyzował się w latach
+              60. XX w. wraz z publikacją arkuszy Letrasetu, zawierających
+              fragmenty Lorem Ipsum, a ostatnio z zawierającym różne wersje{' '}
+            </p>
           </div>
           <BlueButton label="BIO" />
           <div className="about-video">

@@ -1,11 +1,11 @@
 .sections-bg {
   background: linear-gradient(
       to right,
-      rgba(0, 0, 0, 0.632),
+      rgba(0, 0, 0, 0.632) 10%,
       rgba(10, 10, 10, 0.382)
     ),
     url('../images/section-bg.jpg');
-  background-size: cover;
+  // background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 }
