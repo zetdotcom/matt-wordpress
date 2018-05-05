@@ -5,6 +5,7 @@ import MainHeader from '../components/MainHeader/MainHeader';
 import Navigation from '../components/Navigation/Navigation';
 import About from '../components/About/About';
 import Programs from '../components/Programs/Programs';
+import Services from '../components/Services/Services';
 
 import '../styles/styles.scss';
 import './index.scss';
@@ -17,6 +18,7 @@ const IndexPage = props => (
       <About />
       <Programs />
     </div>
+    <Services />
     <div className="container">
       <h1>Hi people</h1>
       <p>Welcome to your new Gatsby site.</p>
