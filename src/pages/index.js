@@ -6,6 +6,9 @@ import Navigation from '../components/Navigation/Navigation';
 import About from '../components/About/About';
 import Programs from '../components/Programs/Programs';
 import Services from '../components/Services/Services';
+import Testimonies from '../components/Testimonies/Testimonies';
+
+import shirtless from '../images/shirtless.jpg';
 
 import '../styles/styles.scss';
 import './index.scss';
@@ -19,6 +22,18 @@ const IndexPage = props => (
       <Programs />
     </div>
     <Services />
+    <div className="motivationCall">
+      <div className="motivationCall--left"> </div>
+      <div className="motivationCall--right">
+        <img src={shirtless} />
+        <h1>
+          {' '}
+          THere are no shortcuts to success. If you want it you are going to
+          have to work for it.{' '}
+        </h1>
+      </div>
+    </div>
+    <Testimonies />
     <div className="container">
       <h1>Hi people</h1>
       <p>Welcome to your new Gatsby site.</p>

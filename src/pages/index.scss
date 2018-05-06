@@ -1,3 +1,5 @@
+@import '../styles/colors.scss';
+
 .sections-bg {
   background: linear-gradient(
       to right,
@@ -8,4 +10,76 @@
   // background-size: cover;
   background-position: center;
   background-repeat: repeat;
+}
+
+.motivationCall {
+  display: flex;
+
+  position: relative;
+  height: 75vh;
+  width: 100%;
+
+  // background-size: cover;
+  // background-position: center;
+  // background-position-y: 100px;
+  // background-repeat: no-repeat;
+  overflow: hidden;
+  .motivationCall--left {
+    background: $darkBlue;
+    flex: 1;
+  }
+
+  .motivationCall--right {
+    background: linear-gradient(to right, $darkBlue, transparent 50%);
+    flex: 4;
+
+    img {
+      position: absolute;
+      z-index: -1;
+      width: 80%;
+      height: 120%;
+      right: 0;
+    }
+
+    h1 {
+      // display: flex;
+      color: $greyfont;
+      position: absolute;
+      top: 30%;
+      left: 50px;
+      width: 900px;
+    }
+  }
+}
+
+@media (max-width: 930px) {
+  .motivationCall {
+    .motivationCall--right {
+      h1 {
+        width: unset;
+      }
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .motivationCall {
+    .motivationCall--right {
+      h1 {
+        top: 10%;
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 415px) {
+  .motivationCall {
+    .motivationCall--right {
+      h1 {
+        // top: 10%;
+        font-size: 1.5rem;
+      }
+    }
+  }
 }

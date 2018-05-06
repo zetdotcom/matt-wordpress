@@ -3,39 +3,37 @@ import coaching from '../../images/coaching.jpg';
 import nutrition from '../../images/nutrition.jpg';
 import training from '../../images/training.jpg';
 
-const programs_data = [
+const testimonies_data = [
   {
-    type: 'service',
-    title: 'Online Coaching',
-    description:
+    img: `${online_coaching}`,
+    desc:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus.',
-    image: `${online_coaching}`,
-    link: '#',
+    author: 'Matts Client',
   },
   {
-    type: 'service',
-    title: '1 on 1 coaching',
-    description:
+    img: `${online_coaching}`,
+    desc:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus.',
-    image: `${coaching}`,
-    link: '#',
+    author: 'Matts Client',
   },
   {
-    type: 'service',
-    title: 'Custom nutriotion plan',
-    description:
+    img: `${online_coaching}`,
+    desc:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus.',
-    image: `${nutrition}`,
-    link: '#',
+    author: 'Matts Client',
   },
   {
-    type: 'service',
-    title: 'personal training programs',
-    description:
+    img: `${online_coaching}`,
+    desc:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus.',
-    image: `${training}`,
-    link: '#',
+    author: 'Matts Client',
+  },
+  {
+    img: `${online_coaching}`,
+    desc:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus.',
+    author: 'Matts Client',
   },
 ];
 
-export default programs_data;
+export default testimonies_data;

@@ -18,7 +18,7 @@ const programImage = () => {
             <h3>{item.title}</h3>
             <div className="program-desc">{item.description}</div>
             <div className="program-button">
-              <BlueButton label="Check Program" />
+              <BlueButton label="Check Program" className="blue-button" />
             </div>
           </div>{' '}
         </div>
