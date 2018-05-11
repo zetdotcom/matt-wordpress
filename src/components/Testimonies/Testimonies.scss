@@ -83,7 +83,7 @@
 }
 .slick-dots li.slick-active button:before {
   opacity: 1;
-  background: rgb(227, 51, 122);
+  background: $blue;
   border: 1px solid rgb(9, 83, 144);
 }
 
@@ -122,15 +122,28 @@
 /* --------Elements------------ */
 .testimonies-section {
   background: rgba(55, 52, 52, 0.889);
+  text-align: center;
+
   h1 {
     display: inline-block;
-    text-align: center;
+    padding-top: 100px;
+    &:after {
+      margin: 30px auto;
+    }
+    // text-align: center;
   }
+}
+.quote-mark {
+  color: $blue;
+  font-size: 5rem;
+  line-height: 0.3;
+  position: absolute;
+  // margin: auto;
 }
 
 .testimonies-container {
   // margin: 0 auto;
-  margin-bottom: 70px;
+  padding-bottom: 100px;
 
   margin: 0 auto;
   width: 50%;
