@@ -94,29 +94,13 @@
 }
 
 /* Arrows */
-.slick-prev,
-.slick-next {
-  font-size: 0;
-  line-height: 0;
-
-  position: absolute;
-  top: 50%;
-
-  display: block;
-
-  width: 20px;
-  height: 20px;
-  padding: 0;
-  -webkit-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-
-  cursor: pointer;
-
-  color: transparent;
-  border: none;
-  outline: none;
-  background: transparent;
+.slick-prev:before,
+.slick-next:before {
+  color: unset;
+  display: none;
+  // border: none;
+  // outline: none;
+  // background: transparent;
 }
 
 /* --------Elements------------ */
@@ -146,7 +130,7 @@
   padding-bottom: 100px;
 
   margin: 0 auto;
-  width: 50%;
+  width: 750px;
 }
 
 .testimony {
@@ -154,17 +138,20 @@
   letter-spacing: 0.3px;
   color: $white;
   padding: 30px;
-  width: 50%;
+  padding-top: 0px;
+  // width: 750px;
   // border: 1px solid red;
   &-img {
     flex: 1;
-    margin-right: 20px;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
+    margin: 0 auto 20px;
+    height: 150px;
+    width: 150px;
+    // border-radius: 50%;
     img {
-      border-radius: 50%;
-      border: 2px solid $blue;
+      border-radius: 3px;
+      height: 100%;
+      width: 100%;
+      // border: 2px solid black;
     }
   }
   &-desc {
@@ -175,5 +162,23 @@
     p {
       font-size: 0.7em;
     }
+  }
+}
+
+@media (max-width: 860px) {
+  .testimonies-container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 530px) {
+  .testimonies-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 415px) {
+  .testimonies-container {
+    width: 100%;
   }
 }

@@ -18,8 +18,8 @@ class Testimonies extends React.Component {
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 4000,
+      autoplay: false,
+      autoplaySpeed: 4000
     };
     return (
       <div className="testimonies-section ">
@@ -36,7 +36,7 @@ class Testimonies extends React.Component {
                 return (
                   <div className="testimony" key={key}>
                     <div className="testimony-img">
-                      <img src={item.img} alt="profile picture" />
+                      <img src={item.img} alt="profile picture"/>
                     </div>
                     <div className="testimony-desc">
                       <p>{item.desc}</p>
