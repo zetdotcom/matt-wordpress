@@ -1,0 +1,65 @@
+.contact-page {
+  background: linear-gradient(
+    -225deg,
+    rgba(24, 24, 24, 0.4),
+    rgba(52, 79, 159, 0.312)
+  );
+  height: 100%;
+  padding: 100px;
+}
+
+.contact-box,
+.contact-box-info div {
+  border: 1px solid grey;
+  // padding: 20px;
+}
+
+.contact-box {
+  display: flex;
+}
+
+.contact-box-form {
+  flex: 2;
+  form {
+    width: 80%;
+    padding: 40px 0 0 40px;
+  }
+  .form-row1 {
+    display: flex;
+    justify-content: space-between;
+  }
+  input {
+    // margin: 0 5px 5px 0;
+    background: transparent;
+    border: 1px solid grey;
+    height: 45px;
+    flex: 1;
+  }
+  input[name='email'] {
+    margin: 0 20px 20px 0;
+  }
+  input[name='subject'] {
+    margin: 0 0 20px 0;
+  }
+  textarea[name='message'] {
+    background: transparent;
+    display: block;
+    width: 100%;
+    height: 150px;
+    // margin: 5px;
+  }
+}
+
+.contact-box-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  div {
+    padding: 10px;
+    flex: 1;
+  }
+  p {
+    margin: 0;
+  }
+}

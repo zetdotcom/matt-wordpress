@@ -7,6 +7,7 @@ import About from '../components/About/About';
 import Programs from '../components/Programs/Programs';
 import Services from '../components/Services/Services';
 import Testimonies from '../components/Testimonies/Testimonies';
+import Contact from '../components/Contact/Contact';
 
 import shirtless from '../images/shirtless.jpg';
 
@@ -15,25 +16,26 @@ import './index.scss';
 
 const IndexPage = props => (
   <div className="index-page">
-    <MainHeader />
-    <Navigation />
+    <MainHeader/>
+    <Navigation/>
     <div className="sections-bg">
-      <About />
-      <Programs />
+      <About/>
+      <Programs/>
     </div>
-    <Services />
+    <Services/>
     <div className="motivationCall">
-      <div className="motivationCall--left"> </div>
+      <div className="motivationCall--left"></div>
       <div className="motivationCall--right">
-        <img src={shirtless} />
+        <img src={shirtless}/>
         <h1>
           {' '}
-          THere are no shortcuts to success. If you want it you are going to
-          have to work for it.{' '}
+          THere are no shortcuts to success. If you want it you are going to have to work
+          for it.{' '}
         </h1>
       </div>
     </div>
-    <Testimonies />
+    <Testimonies/>
+    <Contact/> {/*
     <div className="container">
       <h1>Hi people</h1>
       <p>Welcome to your new Gatsby site.</p>
@@ -41,7 +43,7 @@ const IndexPage = props => (
       <Link to="/sample-page">Go to sample page</Link>
       <br />
       <Link to="/posts/hello-world">Go to samplepost hello word</Link>
-    </div>
+    </div> */}
   </div>
 );
 
