@@ -24,12 +24,15 @@ class Testimonies extends React.Component {
     return (
       <div className="testimonies-section ">
         <div className="sections-bg">
-          <h1>
-            <h2>
-              <span className="quote-mark">&Prime;</span>
-            </h2>{' '}
-            What clients say{' '}
-          </h1>
+          <h2 className="quote-mark">
+            &Prime;
+          </h2>{' '}
+          <div className="testimonies-title">
+            <h1>
+
+              What clients say{' '}
+            </h1>
+          </div>
           <div className="testimonies-container ">
             <Slider {...settings}>
               {testimony_data.map((item, key) => {

@@ -119,10 +119,16 @@
 }
 .quote-mark {
   color: $blue;
-  font-size: 5rem;
-  line-height: 0.3;
-  position: absolute;
+  font-size: 6em;
+  line-height: 0;
+  padding-top: 70px;
+  // position: absolute;
   // margin: auto;
+}
+.testimonies-title {
+  h1 {
+    padding-top: 5px;
+  }
 }
 
 .testimonies-container {
