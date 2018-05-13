@@ -1,3 +1,5 @@
+@import '../../styles/colors.scss';
+
 .contact-page {
   background: linear-gradient(
     -225deg,
@@ -28,6 +30,14 @@
     display: flex;
     justify-content: space-between;
   }
+  .blue-button-form {
+    float: right;
+  }
+  input,
+  textarea {
+    color: $white;
+    padding: 0 5px;
+  }
   input {
     // margin: 0 5px 5px 0;
     background: transparent;
@@ -36,10 +46,10 @@
     flex: 1;
   }
   input[name='email'] {
-    margin: 0 20px 20px 0;
-  }
-  input[name='subject'] {
     margin: 0 0 20px 0;
+  }
+  input[name='name'] {
+    margin: 0 20px 20px 0;
   }
   textarea[name='message'] {
     background: transparent;
@@ -56,10 +66,91 @@
   flex-direction: column;
   // justify-content: center;
   div {
-    padding: 10px;
+    padding: 20px 10px 0 20px;
+    letter-spacing: 1px;
     flex: 1;
   }
   p {
     margin: 0;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+  }
+}
+
+@media (max-width: 1130px) {
+  .contact-box-form {
+    form {
+      width: 95%;
+      padding: 40px 0 10px 40px;
+    }
+    .form-row1 {
+      flex-direction: column;
+    }
+    input[name='email'] {
+      margin: 5px 0;
+    }
+    input[name='name'] {
+      margin: 0;
+    }
+    .blue-button-form {
+      margin-top: 10px;
+    }
+  }
+}
+
+@media (max-width: 880px) {
+  .contact-box {
+    flex-direction: column;
+  }
+  .contact-box-info {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 750px) {
+  .contact-page {
+    padding: 100px 50px;
+  }
+  .contact-box-form {
+    form {
+      width: 100%;
+      padding: 20px;
+    }
+  }
+  .contact-box-info {
+    flex-direction: column;
+    div {
+      h4 {
+        margin: 0;
+        margin-right: 40px;
+      }
+      display: flex;
+      padding: 15px 10px;
+      align-items: center;
+    }
+    li {
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-page {
+    padding: 100px 0px;
+  }
+}
+
+@media (max-width: 380px) {
+  .contact-box-info {
+    div {
+      flex-flow: row wrap;
+      h4 {
+        margin-right: 20px;
+        font-size: 1rem;
+      }
+    }
   }
 }

@@ -1,0 +1,9 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1px 20px;
+  background: linear-gradient(to left, lightgrey, lightblue);
+  a {
+    text-decoration: underline;
+  }
+}

@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'gatsby-link';
 
 import BlueButton from '../../components/BlueButton/BlueButton';
+import {FacebookIcon, InstaIcon} from '../SocialIcons/SocialIcons';
 
 import './Contact.scss';
 
@@ -17,13 +18,14 @@ const Contact = () => (
               <h4>
                 Get in touch</h4>
               <div className="form-row1">
-                <input type="email" name="email"/>
-                <input type="text" name="subject"/>
+                <input type="text" name="name" placeholder="Name"/>
+                <input type="email" name="email" placeholder="Email"/>
               </div>
               <input type="hidden" name="_next" value="//zetdotcom.github.io"/>
 
-              <textarea name="message" type="text"/>
-              <BlueButton label="submit" type="submit"/>
+              <textarea name="message" type="text" placeholder="Message"/>
+              <div className="blue-button-form">
+                <BlueButton label="submit" type="submit"/></div>
             </form>
           </div>
 
@@ -40,14 +42,18 @@ const Contact = () => (
           </div>
           <div>
             <h4>Social</h4>
-            <a>facebook</a>
-            <a>Twitter</a>
-            <a>Instagram</a>
+            <ul>
+              <li>
+                <FacebookIcon/>
+              </li>
+              <li>
+                <InstaIcon/>
+              </li>
+            </ul>
           </div>
-
         </div>
       </div>
     </div>
   </div>
-)
+);
 export default Contact;

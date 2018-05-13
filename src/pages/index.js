@@ -8,6 +8,7 @@ import Programs from '../components/Programs/Programs';
 import Services from '../components/Services/Services';
 import Testimonies from '../components/Testimonies/Testimonies';
 import Contact from '../components/Contact/Contact';
+import Footer from '../components/Footer/Footer';
 
 import shirtless from '../images/shirtless.jpg';
 
@@ -44,6 +45,7 @@ const IndexPage = props => (
       <br />
       <Link to="/posts/hello-world">Go to samplepost hello word</Link>
     </div> */}
+    <Footer/>
   </div>
 );
 
