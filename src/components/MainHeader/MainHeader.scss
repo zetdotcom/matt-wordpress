@@ -2,7 +2,7 @@
   background: linear-gradient(rgba(0, 4, 20, 0.875) 10%, rgba(1, 41, 49, 0.451)),
     url('../../images/matt-header3.jpg') no-repeat center center;
   background-size: cover;
-  height: 100vh;
+  height: 106vh;
   position: relative;
   display: flex;
   align-items: center;
@@ -26,6 +26,59 @@
   .titles-call {
     font-size: 1.5rem;
     width: 50%;
+  }
+  .header-icons {
+    position: absolute;
+    // height: 50px;
+    align-items: center;
+    // border: 1px solid red;
+    display: flex;
+    transform: rotate(90deg);
+    // transform: translate(80%, 80%);
+    // justify-self: flex-end;
+    // left: 0px;
+    // top: 130px;
+    left: 85vw;
+    top: 80vh;
+    // top: 80%;
+    // left: 90%;
+    // flex-direction: column;
+    // justify-items: center;
+    // margin-right: 20px;
+    h4 {
+      margin: 0;
+      margin-right: 20px;
+    }
+  }
+}
+
+@media (max-width: 1035px) {
+  .main-header {
+    .header-icons {
+      left: 78vw;
+    }
+  }
+}
+
+@media (max-width: 740px) {
+  .main-header {
+    .header-icons {
+      transform: rotate(0deg);
+      top: 20px;
+      left: 50px;
+    }
+    h4 {
+      // transform: rotate(-90deg);
+      // margin-right: 0;
+    }
+    ul {
+      // display: flex;
+      // margin-left: 15px;
+      // margin-top: 20px;
+    }
+    li {
+      // list-style: none;
+    }
   }
 }
 
