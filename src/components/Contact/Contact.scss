@@ -13,7 +13,6 @@
 .contact-box,
 .contact-box-info div {
   border: 1px solid grey;
-  // padding: 20px;
 }
 
 .contact-box {
@@ -39,7 +38,6 @@
     padding: 0 5px;
   }
   input {
-    // margin: 0 5px 5px 0;
     background: transparent;
     border: 1px solid grey;
     height: 45px;
@@ -56,7 +54,6 @@
     display: block;
     width: 100%;
     height: 150px;
-    // margin: 5px;
   }
 }
 
@@ -64,7 +61,6 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  // justify-content: center;
   div {
     padding: 20px 10px 0 20px;
     letter-spacing: 1px;

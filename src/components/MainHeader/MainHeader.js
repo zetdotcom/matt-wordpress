@@ -10,14 +10,6 @@ import logo from '../../images/logo-small.jpg';
 
 const MainHeader = () => (
   <div className="main-header">
-    {/*
-
-      <Navigation />
-      <img
-      src={logo}
-      className="img-logo"
-      alt="matt wielunski personal trainer logo"
-    />*/}
     <div className="titles container">
       <h1>Matt Wielunski</h1>
       <div className="titles-call">

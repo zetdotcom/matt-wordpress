@@ -29,22 +29,11 @@
   }
   .header-icons {
     position: absolute;
-    // height: 50px;
     align-items: center;
-    // border: 1px solid red;
     display: flex;
     transform: rotate(90deg);
-    // transform: translate(80%, 80%);
-    // justify-self: flex-end;
-    // left: 0px;
-    // top: 130px;
     left: 85vw;
     top: 80vh;
-    // top: 80%;
-    // left: 90%;
-    // flex-direction: column;
-    // justify-items: center;
-    // margin-right: 20px;
     h4 {
       margin: 0;
       margin-right: 20px;
@@ -66,18 +55,6 @@
       transform: rotate(0deg);
       top: 20px;
       left: 50px;
-    }
-    h4 {
-      // transform: rotate(-90deg);
-      // margin-right: 0;
-    }
-    ul {
-      // display: flex;
-      // margin-left: 15px;
-      // margin-top: 20px;
-    }
-    li {
-      // list-style: none;
     }
   }
 }

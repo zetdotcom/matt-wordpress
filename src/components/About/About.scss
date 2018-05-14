@@ -64,32 +64,14 @@
 @media (max-width: 980px) {
   .about-page {
     .about-content {
-      // width: 100%;
-      // flex-grow: 1;
       flex: 1 1 90%;
     }
     .big-image {
-      // position: absolute;
-      // flex: 1 1 100%;
-      // width: 100%;
       margin: 0 auto;
       height: 100%;
       img {
-        // height: 50%;
         top: 0px;
         opacity: 0.5;
-
-        // left: -40px;
-      }
-    }
-  }
-}
-
-@media (max-width: 880px) {
-  .about-page {
-    .big-image {
-      img {
-        // height: 30%;
       }
     }
   }

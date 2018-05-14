@@ -1,11 +1,6 @@
 @import '../../styles/colors.scss';
 
 .programs-section {
-  // background: linear-gradient(
-  //   to left,
-  //   rgb(15, 15, 15) 60%,
-  //   rgba(8, 13, 29, 0.799)
-  // );
   color: $white;
   p {
     color: $greyfont;
@@ -19,16 +14,9 @@
     display: flex;
     flex-flow: row;
     justify-content: center;
-    // height: 80vh;
   }
   .overlay {
     height: 100%;
-    // border: 1px solid $white;
-    // margin: 10px;
-    // overflow: hidden;
-    // z-index: 2;
-    // background: rgba(0, 0, 0, 0.722);
-    // position: absolute;
   }
   .program {
     position: relative;
@@ -37,12 +25,9 @@
     color: $white;
     margin: 3px;
     transition: all 0.2s;
-    // border: 1px solid black;
     img {
-      // position: abosulte;
       height: 100%;
       width: 100%;
-      // z-index: -1;
     }
     &:before {
       content: '';
@@ -74,7 +59,6 @@
     left: 20px;
     right: 20px;
     z-index: 3;
-    // height: 100%;
   }
   .program-type {
     color: $greyfont;
