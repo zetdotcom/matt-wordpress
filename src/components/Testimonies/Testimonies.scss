@@ -90,7 +90,6 @@
 .slick-initialized .slick-slide {
   display: flex;
   justify-items: center;
-  // margin: 20px;
 }
 
 /* Arrows */
@@ -98,9 +97,6 @@
 .slick-next:before {
   color: unset;
   display: none;
-  // border: none;
-  // outline: none;
-  // background: transparent;
 }
 
 /* --------Elements------------ */
@@ -122,8 +118,6 @@
   font-size: 6em;
   line-height: 0;
   padding-top: 70px;
-  // position: absolute;
-  // margin: auto;
 }
 .testimonies-title {
   h1 {
@@ -132,9 +126,7 @@
 }
 
 .testimonies-container {
-  // margin: 0 auto;
   padding-bottom: 100px;
-
   margin: 0 auto;
   width: 750px;
 }
@@ -145,24 +137,19 @@
   color: $white;
   padding: 30px;
   padding-top: 0px;
-  // width: 750px;
-  // border: 1px solid red;
   &-img {
     flex: 1;
     margin: 0 auto 20px;
     height: 150px;
     width: 150px;
-    // border-radius: 50%;
     img {
       border-radius: 3px;
       height: 100%;
       width: 100%;
-      // border: 2px solid black;
     }
   }
   &-desc {
     flex: 9;
-    // padding-right: 84px;
   }
   &-author {
     p {
