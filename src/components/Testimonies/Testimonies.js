@@ -22,7 +22,7 @@ class Testimonies extends React.Component {
       autoplaySpeed: 4000
     };
     return (
-      <div className="testimonies-section ">
+      <div className="testimonies-section" id="testimonies">
         <div className="sections-bg">
           <h2 className="quote-mark">
             &Prime;

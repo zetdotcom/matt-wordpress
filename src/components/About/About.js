@@ -12,11 +12,11 @@ import mattAbout3 from '../../images/about-matt-3.jpg';
 import mattAbout4 from '../../images/about-matt-4.jpg';
 
 const About = () => (
-  <div className="about-page">
+  <div className="about-page" id="about">
     <div className="container">
       <div className="about-top">
         <div className="big-image">
-          <img src={mattCut} alt="main matt image" />
+          <img src={mattCut} alt="main matt image"/>
         </div>
         <div className="about-content">
           <div className="page-title">Matt Wielunski</div>
@@ -25,34 +25,26 @@ const About = () => (
           </div>
           <div className="about-description">
             <p>
-              Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w
-              przemyśle poligraficznym. Został po raz pierwszy użyty w XV w.
-              przez nieznanego drukarza do wypełnienia tekstem próbnej książki.
-              Pięć wieków później zaczął być używany przemyśle elektronicznym,
-              pozostając praktycznie niezmienionym. Spopularyzował się w latach
-              60. XX w. wraz z publikacją arkuszy Letrasetu, zawierających
+              Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle
+              poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza
+              do wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany
+              przemyśle elektronicznym, pozostając praktycznie niezmienionym. Spopularyzował
+              się w latach 60. XX w. wraz z publikacją arkuszy Letrasetu, zawierających
               fragmenty Lorem Ipsum, a ostatnio z zawierającym różne wersje{' '}
             </p>
           </div>
-          <BlueButton label="BIO" />
+          <BlueButton label="about"/>
           <div className="about-video">
             <iframe
               width="560"
               height="315"
               src="https://www.youtube.com/embed/MSqFN_AiHo4"
               frameBorder="0"
-              allowFullScreen
-            />
+              allowFullScreen/>
           </div>
         </div>
       </div>
     </div>
-    {/*}   <div className="about-images">
-      <img src={mattAbout1} alt="image1" />
-      <img src={mattAbout2} alt="image2" />
-      <img src={mattAbout3} alt="image2" />
-      <img src={mattAbout4} alt="image2" />
-</div> */}
   </div>
 );
 

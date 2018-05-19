@@ -12,7 +12,7 @@ const serviceImage = () => {
     return (
       <div className="service" key={key}>
         <div className="overlay">
-          <img className="service-image" src={item.image} />
+          <img className="service-image" src={item.image}/>
           <div className="service-info">
             <div className="service-type">{item.type}</div>
             <h3>{item.title}</h3>
@@ -25,17 +25,16 @@ const serviceImage = () => {
 };
 
 const Services = () => (
-  <div className="services-section">
+  <div className="services-section" id="services">
     <div className="services-section-title container">
       <div>
         <h1>services</h1>
         <p>
-          I offer a range of services to help you achieve your goals and get
-          into shape
+          I offer a range of services to help you achieve your goals and get into shape
         </p>
       </div>
       <div>
-        <BlueButton label="services" />
+        <BlueButton label="services"/>
       </div>
     </div>
     <div className="services-images">{serviceImage()}</div>

@@ -7,8 +7,8 @@ import {FacebookIcon, InstaIcon} from '../SocialIcons/SocialIcons';
 import './Contact.scss';
 
 const Contact = () => (
-  <div className="sections-bg  ">
-    <div className=" contact-page">
+  <div className="sections-bg">
+    <div className=" contact-page" id="contact">
       <div className="contact-box">
         <div className="contact-box-form">
 

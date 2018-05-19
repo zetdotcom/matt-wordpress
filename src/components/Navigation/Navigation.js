@@ -15,10 +15,16 @@ class Navigation extends React.Component {
     super(props);
     this.state = {
       open: false,
-      menuClass: 'a',
+      menuClass: 'a'
     };
 
-    this.setMenuClass = this.setMenuClass.bind(this);
+    this.setMenuClass = this
+      .setMenuClass
+      .bind(this);
+
+    this.toogleMenu = this
+      .toggleMenu
+      .bind(this);
   }
   componentDidMount() {
     this.setMenuClass();
@@ -33,34 +39,27 @@ class Navigation extends React.Component {
   }
 
   setMenuClass() {
-    //when resizing with window less than 740px and menu was opened it keeps menu opened
+    /* when resizing with window less than 740px and menu was opened it keeps menu
+    opened */
     if (window.innerWidth < 740 && this.state.open) {
-      this.setState({
-        menuClass: 'navigation--open',
-      });
+      this.setState({menuClass: 'navigation--open'});
     } else if (window.innerWidth > 740) {
-      //when window made more than 740px brings normal menu back and sets state for resp menu to false
-      this.setState({
-        open: false,
-        menuClass: 'navigation',
-      });
+      // when window made more than 740px brings normal menu back and sets state for
+      // resp menu to false
+      this.setState({open: false, menuClass: 'navigation'});
     } else if (window.innerWidth < 740) {
       //hides resp menu when window less than 740px
-      this.setState({ menuClass: 'navigation--close' });
+      this.setState({menuClass: 'navigation--close'});
     }
   }
   toggleMenu() {
     this.setState({
-      open: !this.state.open,
+      open: !this.state.open
     });
     if (this.state.open) {
-      this.setState({
-        menuClass: 'navigation--close',
-      });
+      this.setState({menuClass: 'navigation--close'});
     } else {
-      this.setState({
-        menuClass: 'navigation--open',
-      });
+      this.setState({menuClass: 'navigation--open'});
     }
   }
 
@@ -70,7 +69,9 @@ class Navigation extends React.Component {
         <div className="hamburger">
           <HamburgerMenu
             isOpen={this.state.open}
-            menuClicked={this.toggleMenu.bind(this)}
+            menuClicked={this
+            .toggleMenu
+            .bind(this)}
             onClick={this.setMenuClass}
             width={0}
             height={0}
@@ -78,25 +79,24 @@ class Navigation extends React.Component {
             rotate={0}
             color="white"
             borderRadius={0}
-            animationDuration={0.5}
-          />
+            animationDuration={0.5}/>
         </div>
         <div className={this.state.menuClass}>
           <ul className="link">
             <li>
-              <Link to="#">Home</Link>
+              <a href="#" onClick={this.toogleMenu}>Home</a>
             </li>
             <li>
-              <Link to="#">Bio</Link>
+              <a href="#about" onClick={this.toogleMenu}>About</a>
             </li>
             <li>
-              <Link to="#">Programs & Diet</Link>
+              <a href="#programs" onClick={this.toogleMenu}>Programs & Diet</a>
             </li>
             <li>
-              <Link to="#">Services</Link>
+              <a href="#services" onClick={this.toogleMenu}>Services</a>
             </li>
             <li>
-              <Link to="/posts">Blog</Link>
+              <a href="/posts" onClick={this.toogleMenu}>Blog</a>
             </li>
           </ul>
         </div>
